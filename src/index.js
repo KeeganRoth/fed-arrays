@@ -84,8 +84,10 @@ const watchedTvShowText = tvShows
   .map(({ name }) => `I have watched ${name}`);
 console.log("all watched tv shows texts", watchedTvShowText);
 
-console.log("watched tv shows", watchedTvShows);
 console.log(
   "watched tv shows, except Alf",
   watchedTvShows.filter(watchedTvShow => !(watchedTvShow.name === "Alf"))
 );
+
+const moneys = [0.5, 2.75, 12.01];
+console.log(moneys.reduce((sum, current) => sum + current));
